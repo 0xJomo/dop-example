@@ -55,7 +55,7 @@ contract DOPTrapTest is Test {
         (bool shouldRespond, ) = dopTrap.shouldRespond(collectArray);
         assertTrue(
             !shouldRespond,
-            "Trap should not be triggered with larger effectiveness"
+            "Trap should not be triggered with smaller effectiveness"
         );
     }
 
