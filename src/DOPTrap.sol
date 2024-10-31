@@ -34,9 +34,6 @@ contract DOPTrap is ITrap {
         bytes[] calldata data
     ) external pure override returns (bool, bytes memory) {
         uint256 len = data.length;
-        if (len < 2) {
-            return (false, bytes(""));
-        }
         /*        Drosera has Trap:
             1. if current (p2p.org) performance score < TOP-10 Node operators
             2. and withdraw queue < X1 days
