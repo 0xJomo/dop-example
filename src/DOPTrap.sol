@@ -19,7 +19,8 @@ contract DOPTrap is ITrap {
     uint256 public effectivenessScore = 9789498224394284;
 
     uint8 public taskType = 24;
-    IOpenOracleCommonDataFeed public oracle = IOpenOracleCommonDataFeed(0x2e234DAe75C793f67A35089C9d99245E1C58470b);
+    // forge test 0x2e234DAe75C793f67A35089C9d99245E1C58470b
+    IOpenOracleCommonDataFeed public oracle = IOpenOracleCommonDataFeed(0x726974f8e7bAEBD67aF7E9a9cb5Dc84dF3694901);
 
     function collect() external view override returns (bytes memory) {
         // getoperatoreffectiveness
@@ -34,9 +35,6 @@ contract DOPTrap is ITrap {
         bytes[] calldata data
     ) external pure override returns (bool, bytes memory) {
         uint256 len = data.length;
-        if (len < 2) {
-            return (false, bytes(""));
-        }
         /*        Drosera has Trap:
             1. if current (p2p.org) performance score < TOP-10 Node operators
             2. and withdraw queue < X1 days
@@ -46,10 +44,14 @@ contract DOPTrap is ITrap {
         for (uint256 i = 0; i < len; i++) {
             EffectivenessDataPoint memory effectivenessPoint = abi.decode(data[i], (EffectivenessDataPoint));
             if(effectivenessPoint.effectiveness > effectivenessPoint.effectivenessScore){
-                return (true, bytes(""));
+                return (true, abi.encode(effectivenessPoint.effectiveness));
             }
         }
 
         return (false, bytes(""));
+    }
+
+    function setEffectivenessScore(uint256 _effectivenessScore) external {
+        effectivenessScore = _effectivenessScore;
     }
 }

@@ -1,0 +1,16 @@
+ethereum_rpc = "https://ethereum-holesky-rpc.publicnode.com"
+drosera_rpc = "https://seed-node.testnet.drosera.io"
+eth_chain_id = 17000
+drosera_address = "0xea08f7d533C2b9A62F40D5326214f39a8E3A32F8"
+
+[traps]
+
+[traps.doptrap]
+path = "out/DOPTrap.sol/DOPTrap.json"
+response_contract = "0xF9F26c467b13A4f805DAB58c0203CAc82bf8A753"
+response_function = "responseCallback(uint256)"
+cooldown_period_blocks = 32
+min_number_of_operators = 1
+max_number_of_operators = 2
+block_sample_size = 10
+address = "0x18Cb50Bf95Db43Da9E87FBA621d7b9de82f8F85e"
