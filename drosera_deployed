@@ -1,0 +1,47 @@
+1:  trap_name: doptrap,
+    result: Result(
+    TrapResult {
+        trapAddress: 0x0000000000000000000000000000000000000000,
+        shouldRespond: true,
+        blockNumber: 2648240,
+        blockHash: 0xd9cc81e7bc2b650267c4aecbf3d496cff8f2185e4c7d5ef1e8e485f4290559b6,
+        responseData: 0x0000000000000000000000000000000000000000000000000da09789aee1193c,
+    },
+)
+
+-----------------------------------------------------------------------------------------
+
+Changes to apply:
+
+1. Create trap config for doptrap: (Estimated Gas Required: 1,699,440)
+ - Bytecode Hash: 2c89115d0d38b0b32f02aa2a392ed64176a4ad766a7db586b12e123fc8868ce7
+ - Response Contract: 0xF9F26c467b13A4f805DAB58c0203CAc82bf8A753
+ - Response Function: responseCallback(uint256)
+ - Seed Node DNR: 0xf8c7f85a81ac1181c78192818c7907818481b40c2a81912b81ff776b81e2770c361c2181d281dd81aa7f81a381e566488190818781931d6a55486481db4e81d881a6818a5981a73a0b3281db6c343181e20423
+81977b81fb4027203a010c827631a0c50ecd192e439bf361c2a7aaf7d1858286bfba46ad2a29a6f1e485c602906f8ab4313244334b6f6f57503562614c4466323974754e4c4d53613355346a7277695664365666787635586b65537968
+345a31373279378b332e31372e3234382e313282766082765f
+ - Cooldown Period Blocks: 32
+ - Min Number of Operators: 1
+ - Max Number of Operators: 2
+ - Block Sample size: 10
+
+-----------------SUMMARY------------------
+ - Required DRO: 1
+ - Your Available DRO: 5
+ - Total Estimated Gas Cost: 1,699,440
+
+Do you want to apply these changes? [ofc/N]: ofc
+
+-----------------Execution---------------------------------------
+
+Transaction 0x48d0ea6a96b9f43656c81d4a88b9940d82713743362ead43eca0301cef2b8b5c sent. Waiting for confirmation...
+
+  00:00:14 ################################################################################################################################################################# 13/13 (0.0s)
+
+Transaction Hash: 0x48d0ea6a96b9f43656c81d4a88b9940d82713743362ead43eca0301cef2b8b5c
+Explorer Link: https://holesky.etherscan.io/tx/0x48d0ea6a96b9f43656c81d4a88b9940d82713743362ead43eca0301cef2b8b5c
+
+-----------------Results------------------------------------------
+1. Created Trap Config for doptrap: (Gas Used: 1,644,850)
+  - address: 0x18Cb50Bf95Db43Da9E87FBA621d7b9de82f8F85e
+  - block: 2648245
