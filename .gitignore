@@ -15,3 +15,5 @@ docs/
 data/
 
 .idea
+
+node_modules/

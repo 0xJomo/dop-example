@@ -57,7 +57,10 @@ Congratulations! You have successfully deployed a trap!
 
 ### Performing an OpenLayer request
 
-TODO: Add instructions for requesting data from OpenLayer (or details on automated updates on-chain)
+```shell
+yarn
+yarn start
+```
 
 ## Foundry
 

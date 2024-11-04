@@ -1,0 +1,16 @@
+{
+  "name": "dop-example",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/0xJomo/dop-example.git",
+  "license": "MIT",
+  "dependencies": {
+    "ethers": "^5.4.0"
+  },
+  "scripts": {
+    "start": "node js/request.js"
+  },
+  "engines": {
+    "node": "18"
+  }
+}
