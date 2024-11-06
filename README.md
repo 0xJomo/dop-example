@@ -30,8 +30,8 @@ The drosera.toml file is configured to deploy a simple DOP trap. Ensure the dros
 
 ```toml
 # Contract function will be executed when the trap is triggered
-response_contract = "0xdA890040Af0533D98B9F5f8FE3537720ABf83B0C"
-response_function = "helloworld(string)"
+response_contract = "0xF9F26c467b13A4f805DAB58c0203CAc82bf8A753"
+response_function = "responseCallback(uint256)"
 ```
 
 To deploy the trap, run the following commands:

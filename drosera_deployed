@@ -45,3 +45,46 @@ Explorer Link: https://holesky.etherscan.io/tx/0x48d0ea6a96b9f43656c81d4a88b9940
 1. Created Trap Config for doptrap: (Gas Used: 1,644,850)
   - address: 0x18Cb50Bf95Db43Da9E87FBA621d7b9de82f8F85e
   - block: 2648245
+
+
+
+
+Hydrating trap...
+
+trap_config: 0x18Cb50Bf95Db43Da9E87FBA621d7b9de82f8F85e
+trap_rewards: 0x810dBB1d6ADfDbe5474F17D73156FEEd9aEb55ba
+dro_amount: 1
+
+Do you want to hydrate this trap? [ofc/N]: ofc
+
+-----------------Execution---------------------------------------
+
+Transaction 0x0e2fe1fef8516da7a5caca6777102e46fc1704d5241ba6a31066878f0c7b5956 sent. Waiting for confirmation...
+
+  00:00:14 ################################################################################################################################################################# 13/13 (0.0s)
+
+Trap hydrated �
+
+Transaction Hash: 0x0e2fe1fef8516da7a5caca6777102e46fc1704d5241ba6a31066878f0c7b5956
+Explorer Link: https://holesky.etherscan.io/tx/0x0e2fe1fef8516da7a5caca6777102e46fc1704d5241ba6a31066878f0c7b5956
+
+
+
+Bloom Boosting trap...
+
+trap_config: 0x18Cb50Bf95Db43Da9E87FBA621d7b9de82f8F85e
+trap_rewards: 0x810dBB1d6ADfDbe5474F17D73156FEEd9aEb55ba
+eth_amount: 2
+
+Do you want to boost this trap? [ofc/N]: ofc
+
+-----------------Execution---------------------------------------
+
+Transaction 0x566c91e453937278e00c3a3eeaaac92b53a2650cb0e41bf534c8620fe25abe36 sent. Waiting for confirmation...
+
+  00:00:15 ################################################################################################################################################################# 13/13 (0.0s)
+
+Trap boosted �
+
+Transaction Hash: 0x566c91e453937278e00c3a3eeaaac92b53a2650cb0e41bf534c8620fe25abe36
+Explorer Link: https://holesky.etherscan.io/tx/0x566c91e453937278e00c3a3eeaaac92b53a2650cb0e41bf534c8620fe25abe36
